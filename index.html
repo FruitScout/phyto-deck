@@ -168,7 +168,7 @@
         <p>FarmAgent's general Vision model detects the four primary disease phenotypes across varying lighting, growth stages, and leaf orientations.</p>
         <ul class="bullet-list">
           <li><em>Asternina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas</li>
-          <li><em>Fusarium oxysporum</em> — <strong>apical yellowing (marchitez)</strong>, wilting</li>
+          <li><em>Fusarium oxysporum</em> — <strong>apical yellowing (Wilt)</strong>, wilting</li>
           <li><em>Erwinia carotovora</em> — <strong>aqueous necrotic lesions</strong>, soft rot at the piña</li>
           <li><em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart indicators</li>
         </ul>
@@ -187,12 +187,12 @@
       <div class="slide-h1">Automated Weevil Counts — 3 Seconds Per Trap</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>Pheromone-baited bucket and sandwich traps are inspected every 15 days. Manual counting is tedious and operator-dependent.</p>
-        <p>FarmAgent applies a <strong>YOLO real-time object detection model</strong> trained specifically on <em>Scyphophorus acupunctatus</em> — the Agave Weevil — that counts every adult insect in the trap from a single photograph.</p>
+        <p>Pheromone-baited bucket traps and ground sweeps are used for insect monitoring. Manual counting is tedious and operator-dependent.</p>
+        <p>FarmAgent applies a <strong>YOLO real-time object detection model</strong> trained specifically on the Agave Weevil (<em>Scyphophorus acupunctatus</em>) and the Rondon rhinoceros beetle (<em>Strategus aloeus</em>), counting every significant pest from a single photograph.</p>
         <ul class="bullet-list">
-          <li>Distinguishes adult weevils from debris, ants, and other insects</li>
-          <li>Count logged automatically against Trap ID and Folio Geográfico</li>
-          <li>Weevils-per-trap-per-day calculated in real time</li>
+          <li>Distinguishes adult Weevils and Rondon from debris, ants, and other insects</li>
+          <li>Count logged automatically against Trap ID or Plot ID and Folio Geográfico</li>
+          <li>Insects-per-trap or per-hectare calculated in real time</li>
         </ul>
       </div>
       <div class="threshold-row">
