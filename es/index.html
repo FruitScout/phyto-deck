@@ -161,18 +161,22 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Tecnología de Visión · Clasificación de Enfermedades</div>
-      <div class="slide-h1">Cuatro Patógenos. Una Cámara. Clasificación Instantánea.</div>
+      <div class="slide-tag">Tecnología de Visión · Clasificación de Plagas y Enfermedades</div>
+      <div class="slide-h1">Cuatro Plagas Económicas. Una Cámara. Clasificación Instantánea.</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>El modelo de Visión general de FarmAgent detecta los cuatro fenotipos de enfermedad primarios bajo diferentes condiciones de luz, etapas de crecimiento y orientaciones foliares.</p>
+        <p style="font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">Plagas Primarias — Impacto Económico</p>
         <ul class="bullet-list">
-          <li><em>Asternina mexicana</em> — <strong>manchas grises circulares (mancha gris)</strong> en pencas</li>
-          <li><em>Fusarium oxysporum</em> — <strong>amarillamiento apical (marchitez)</strong>, marchitamiento</li>
-          <li><em>Erwinia carotovora</em> — <strong>lesiones necróticas acuosas</strong>, pudrición blanda en la piña</li>
-          <li><em>Scyphophorus sp.</em> — <strong>orificios de entrada</strong>, indicadores de corazón hueco</li>
+          <li><em>Scyphophorus sp.</em> — <strong>orificios de entrada</strong>, corazón hueco. Única plaga presente todo el año — único objetivo de trampas de feromona.</li>
+          <li><em>Strategus aloeus (Rondon)</em> — <strong>perforación del tallo</strong>, daño severo en raíz y corona</li>
+          <li><em>Asterina mexicana</em> — <strong>manchas grises circulares (mancha gris)</strong> en pencas</li>
+          <li><em>Cerambícido (Escarabajo Longicornio)</em> — <strong>tunneling larval en el tallo</strong>, punto de entrada para infecciones secundarias</li>
         </ul>
-        <div class="callout">El modelo no reemplaza el juicio del explorador — lo amplifica. Un censo de 100 plantas que antes tomaba 4–5 horas ahora puede completarse y documentarse en menos de <strong>2.5 horas</strong>, con cadena de custodia digital completa.</div>
+        <p style="font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:10px 0 4px;">Monitoreo Secundario — Severidad del Daño</p>
+        <ul class="bullet-list">
+          <li><em>Fusarium oxysporum</em> — amarillamiento apical — monitoreo para prevenir propagación en el campo</li>
+          <li><em>Erwinia carotovora</em> — lesiones necróticas acuosas — monitoreo por escalada de severidad</li>
+        </ul>
       </div>
     </div>
     <div class="col-visual"><img src="../assets/phyto_slide4_disease_grid_1774404772679.png" alt="Disease grade grid"></div>
@@ -187,17 +191,17 @@
       <div class="slide-h1">Conteo Automatizado de Picudos — 3 Segundos por Trampa</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>El monitoreo de insectos se realiza mediante trampas tipo balde o inspecciones de suelo. El conteo manual es tedioso y depende del operador.</p>
-        <p>FarmAgent aplica un <strong>modelo de detección de objetos YOLO en tiempo real</strong> entrenado específicamente en el Picudo del Agave (<em>Scyphophorus acupunctatus</em>) y el escarabajo rinoceronte Rondon (<em>Strategus aloeus</em>), contando cada plaga significativa desde una sola fotografía.</p>
+        <p><em>Scyphophorus</em> sp. es la <strong>única plaga económica apta para trampas de feromona</strong> — por ser la única especie presente en el campo todo el año. Rondon, Cerambícido y mancha gris se detectan mediante inspección física.</p>
         <ul class="bullet-list">
-          <li>Distingue Picudos adultos y Rondon de residuos, hormigas y otros insectos</li>
-          <li>El conteo se registra automáticamente en el ID de Trampa o Lote y Folio Geográfico</li>
-          <li>Insectos por trampa o por hectárea calculados en tiempo real</li>
+          <li>El <strong>modelo YOLO de FarmAgent</strong> cuenta cada picudo adulto en la trampa desde una sola foto — 3 segundos vs. 10+ minutos manual</li>
+          <li>Conteo registrado automáticamente en ID de Trampa, Lote y Folio Geográfico</li>
+          <li>Insectos/trampa/día calculados en tiempo real; alerta de umbral sin captura de datos manual</li>
         </ul>
       </div>
-      <div class="threshold-row">
+      <div class="callout" style="border-color:var(--amber);margin-top:10px;"><strong style="color:var(--amber);">⚠ Protocolo de Cosecha Vecina</strong><br>Cuando se cosechan campos adyacentes, las colonias de picudo migran. FarmAgent alerta al productor para <strong>activar trampas perimetrales como barrera fitosanitaria</strong> — bloqueando el salto de picudo antes de que alcance su campo.</div>
+      <div class="threshold-row" style="margin-top:10px;">
         <div class="threshold-num">&gt; 1.0</div>
-        <div class="threshold-txt"><strong>Umbral de Acción SENASICA</strong><br>Picudos / trampa / día activa intervención química obligatoria. FarmAgent lo señala automáticamente en cada inspección.</div>
+        <div class="threshold-txt"><strong>Umbral de Acción SENASICA</strong><br>Picudos / trampa / día. Señalado automáticamente en cada inspección.</div>
       </div>
     </div>
     <div class="col-visual"><img src="../assets/phyto_slide5_yolo_weevil_1774404786679.png" alt="YOLO weevil detection"></div>

@@ -155,24 +155,49 @@
     </div>
     <div class="col-visual"><img src="assets/phyto_slide3_leaf_inspection_1774404756284.png" alt="Leaf disease inspection"></div>
   </div>
-  <div class="slide-footer"><span class="slide-footer-logo">FarmAgent</span><span>FruitScout &nbsp;·&nbsp; 3 / 9</span></div>
+  </div>
+  <div class="slide-footer"><span class="slide-footer-logo">FarmAgent</span><span>FruitScout</span></div>
 </div></section>
+
+<!-- SLIDE X: PLATFORM PROOF -->
 <section>
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Vision Technology · Disease Classification</div>
-      <div class="slide-h1">Four Pathogens. One Camera. Instant Classification.</div>
+      <div class="slide-tag">Platform Proof · FieldAgent in Blueberries</div>
+      <div class="slide-h1">Guided Agronomic Tasks — Running in Production.</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>FarmAgent's general Vision model detects the four primary disease phenotypes across varying lighting, growth stages, and leaf orientations.</p>
+        <p>The same <strong>FieldAgent</strong> guided task experience that walks an agave scout through the phytosanitary census is already deployed in other crops.</p>
+        <p>The image shows a blueberry pruning session: FieldAgent's AI Pruning Assistant displays real-time cane-level annotated overlays on the worker's phone — <strong>KEEP (green)</strong> vs. <strong>REMOVE (red/X)</strong> — with cane age and estimated yield impact.</p>
+        <div class="callout">The analogy to agave scouting is direct: instead of cane classifications, FieldAgent walks the agave scout plant-by-plant through severity ratings (0–4), auto-populates the disease type, and pre-fills the SIVEA report fields. <strong>FarmAgent is a proven platform adapted to your crop.</strong></div>
+      </div>
+    </div>
+    <div class="col-visual"><img src="assets/blueberry_pruning_example.png" alt="Blueberry pruning AR overlay"></div>
+  </div>
+  <div class="slide-footer"><span class="slide-footer-logo">FarmAgent</span><span>FruitScout</span></div>
+</div></section>
+
+<section>
+<div class="slide-inner glow-orb">
+  <div class="two-col">
+    <div class="col-text">
+      <div class="slide-tag">Vision Technology · Pest &amp; Disease Classification</div>
+      <div class="slide-h1">Four Economic Pests. One Camera. Instant Classification.</div>
+      <div class="slide-rule"></div>
+      <div class="slide-body">
+        <p style="font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">Primary Pests — Economic Impact</p>
         <ul class="bullet-list">
-          <li><em>Asternina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas</li>
-          <li><em>Fusarium oxysporum</em> — <strong>apical yellowing (Wilt)</strong>, wilting</li>
-          <li><em>Erwinia carotovora</em> — <strong>aqueous necrotic lesions</strong>, soft rot at the piña</li>
-          <li><em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart indicators</li>
+          <li><em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart. Only pest present year-round — sole target of pheromone traps.</li>
+          <li><em>Strategus aloeus (Rondon)</em> — <strong>stem boring</strong>, severe root and crown damage</li>
+          <li><em>Asterina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas</li>
+          <li><em>Cerambycid (Longhorn Beetle)</em> — <strong>larval stem tunneling</strong>, secondary infection entry point</li>
         </ul>
-        <div class="callout">The model does not replace the scout's judgment — it amplifies it. A 100-plant lot census that previously took 4–5 hours can now be completed and documented in under <strong>2.5 hours</strong>, with full digital chain of custody.</div>
+        <p style="font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:10px 0 4px;">Secondary Monitors — Damage Severity</p>
+        <ul class="bullet-list">
+          <li><em>Fusarium oxysporum</em> — apical yellowing (Wilt) — monitored to prevent field-wide spread</li>
+          <li><em>Erwinia carotovora</em> — aqueous necrotic lesions, soft rot — monitored for severity escalation</li>
+        </ul>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide4_disease_grid_1774404772679.png" alt="Disease grade grid"></div>
@@ -187,17 +212,17 @@
       <div class="slide-h1">Automated Weevil Counts — 3 Seconds Per Trap</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>Pheromone-baited bucket traps and ground sweeps are used for insect monitoring. Manual counting is tedious and operator-dependent.</p>
-        <p>FarmAgent applies a <strong>YOLO real-time object detection model</strong> trained specifically on the Agave Weevil (<em>Scyphophorus acupunctatus</em>) and the Rondon rhinoceros beetle (<em>Strategus aloeus</em>), counting every significant pest from a single photograph.</p>
+        <p><em>Scyphophorus</em> sp. is the <strong>only economic pest suitable for pheromone trapping</strong> — because it is the only species present in the field year-round. Rondon, Cerambycid, and gray spot must be caught via physical inspection.</p>
         <ul class="bullet-list">
-          <li>Distinguishes adult Weevils and Rondon from debris, ants, and other insects</li>
-          <li>Count logged automatically against Trap ID or Plot ID and Folio Geográfico</li>
-          <li>Insects-per-trap or per-hectare calculated in real time</li>
+          <li>FarmAgent's <strong>YOLO model</strong> counts every adult weevil in the trap from a single photo — 3 seconds vs. 10+ minutes manual</li>
+          <li>Count logged automatically against Trap ID, Plot ID, and Folio Geográfico</li>
+          <li>Insects-per-trap/day calculated in real time; threshold alert fires without any data entry</li>
         </ul>
       </div>
-      <div class="threshold-row">
+      <div class="callout" style="border-color:var(--amber);margin-top:10px;"><strong style="color:var(--amber);">⚠ Neighbor Harvest Protocol</strong><br>When adjacent fields are harvested, disturbed weevil colonies migrate. FarmAgent alerts the grower to <strong>activate perimeter traps as a phytosanitary barrier</strong> — blocking the weevil jump before it reaches your field.</div>
+      <div class="threshold-row" style="margin-top:10px;">
         <div class="threshold-num">&gt; 1.0</div>
-        <div class="threshold-txt"><strong>SENASICA Action Threshold</strong><br>Weevils / trap / day triggers mandatory chemical intervention. FarmAgent flags this automatically at every inspection.</div>
+        <div class="threshold-txt"><strong>SENASICA Action Threshold</strong><br>Weevils / trap / day. Auto-flagged at every inspection.</div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide5_yolo_weevil_1774404786679.png" alt="YOLO weevil detection"></div>
