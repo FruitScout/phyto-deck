@@ -89,39 +89,45 @@
 
 </head>
 <body>
+<div id="lang-badge">
+  <a href="#" id="btn-en" class="active" onclick="setLang('en');return false;">EN</a>
+  <span class="sep">|</span>
+  <a href="#" id="btn-es" class="inactive" onclick="setLang('es');return false;">ES</a>
+</div>
+
 <div class="reveal">
   <div class="slides">
 <section>
 <div style="position:relative;width:100%;height:100%;">
   <div class="cover-bg" style="background-image:url('assets/phyto_slide1_cover_scout_1774404743129.png')"></div>
   <div class="cover-content">
-    <div class="cover-tag">FarmAgent · Agave Edition &nbsp;·&nbsp; Technology Demonstration</div>
-    <div class="cover-headline">Phytosanitary<br>Scouting<br><em style="color:var(--green);font-style:normal;">on a Phone.</em></div>
+    <div class="cover-tag" data-i18n="hero-tag">FarmAgent · Agave Edition &nbsp;·&nbsp; Technology Demonstration</div>
+    <div class="cover-headline" data-i18n="hero-h1">Phytosanitary<br>Scouting<br><em style="color:var(--green);font-style:normal;">on a Phone.</em></div>
     <div class="cover-rule"></div>
-    <p class="cover-sub">A demonstration of mobile-based AI vision for SENASICA- and CRT-compliant phytosanitary inspection — covering the Quarterly Physical Census and the Bi-Weekly Weevil Trapping Program.</p>
+    <p class="cover-sub" data-i18n="hero-sub">A demonstration of mobile-based AI vision for SENASICA- and CRT-compliant phytosanitary inspection — covering the Quarterly Physical Census and the Bi-Weekly Weevil Trapping Program.</p>
   </div>
   <div class="cover-footer">
     <span class="cover-footer-logo">FarmAgent</span>
-    <span class="cover-footer-conf">FruitScout · Confidential · For CRT Review</span>
+    <span class="cover-footer-conf" data-i18n="footer-conf">FruitScout · Confidential · For CRT Review</span>
   </div>
 </div></section>
 <section>
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Regulatory Context</div>
-      <div class="slide-h1">The CRT Requires Full Traceability. FarmAgent Delivers It.</div>
+      <div class="slide-tag" data-i18n="s2-tag">Regulatory Context</div>
+      <div class="slide-h1" data-i18n="s2-h1">The CRT Requires Full Traceability. FarmAgent Delivers It.</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>Mexico's phytosanitary framework demands a closed, auditable chain from Mother Garden to Movement Passport — governed by <strong>SENASICA</strong>, <strong>CRT</strong>, and reported through <strong>SIVEA</strong>.</p>
+        <p data-i18n="s2-p1">Mexico's phytosanitary framework demands a closed, auditable chain from Mother Garden to Movement Passport — governed by <strong>SENASICA</strong>, <strong>CRT</strong>, and reported through <strong>SIVEA</strong>.</p>
         <ul class="bullet-list">
-          <li><strong>Plot Registration</strong> — Every lot registered with CRT number and Folio Geográfico</li>
-          <li><strong>Quarterly Census</strong> — 100-plant minimum per lot; 1% sampling above 5 ha</li>
-          <li><strong>Bi-Weekly Trapping</strong> — Weevil count per trap every 15 days</li>
-          <li><strong>SIVEA Upload</strong> — Incidence, severity, organism, and actions all required fields</li>
-          <li><strong>NOM-006-SCFI-2012</strong> — Tequila specification compliance from field to bottle</li>
+          <li data-i18n="s2-li1"><strong>Plot Registration</strong> — Every lot registered with CRT number and Folio Geográfico</li>
+          <li data-i18n="s2-li2"><strong>Quarterly Census</strong> — 100-plant minimum per lot; 1% sampling above 5 ha</li>
+          <li data-i18n="s2-li3"><strong>Bi-Weekly Trapping</strong> — Weevil count per trap every 15 days</li>
+          <li data-i18n="s2-li4"><strong>SIVEA Upload</strong> — Incidence, severity, organism, and actions all required fields</li>
+          <li data-i18n="s2-li5"><strong>NOM-006-SCFI-2012</strong> — Tequila specification compliance from field to bottle</li>
         </ul>
-        <div class="callout">Today, most operators re-enter paper data into SIVEA hours or days after the inspection. <strong>That gap is where compliance breaks down.</strong></div>
+        <div class="callout" data-i18n="s2-callout">Today, most operators re-enter paper data into SIVEA hours or days after the inspection. <strong>That gap is where compliance breaks down.</strong></div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide7_sivea_form_1774404818214.png" alt="SIVEA compliance"></div>
@@ -132,24 +138,24 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Process 1 · Quarterly Physical Census</div>
-      <div class="slide-h1">Visual Disease Classification — In Real Time</div>
+      <div class="slide-tag" data-i18n="s3-tag">Process 1 · Quarterly Physical Census</div>
+      <div class="slide-h1" data-i18n="s3-h1">Visual Disease Classification — In Real Time</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>The scout walks the lot in a zig-zag or X pattern. At each plant, they aim their smartphone at the pencas and piña base.</p>
+        <p data-i18n="s3-p1">The scout walks the lot in a zig-zag or X pattern. At each plant, they aim their smartphone at the pencas and piña base.</p>
         <ul class="bullet-list">
-          <li><strong>AI classifies leaf symptoms</strong> — circular gray spots, apical yellowing, aqueous necrotic lesions — instantly</li>
-          <li><strong>Severity rated 0–4</strong> per SENASICA scale, pre-filled in the logbook with a single confirmation tap</li>
-          <li><strong>Core rot check</strong> — scout presses the piña base; soft or foul-smelling is flagged as a Focus of Infestation</li>
-          <li><strong>15% threshold auto-trigger</strong> — system flags the lot for mandatory intervention when incidence exceeds the SENASICA threshold</li>
+          <li data-i18n="s3-li1"><strong>AI classifies leaf symptoms</strong> — circular gray spots, apical yellowing, aqueous necrotic lesions — instantly</li>
+          <li data-i18n="s3-li2"><strong>Severity rated 0–4</strong> per SENASICA scale, pre-filled in the logbook with a single confirmation tap</li>
+          <li data-i18n="s3-li3"><strong>Core rot check</strong> — scout presses the piña base; soft or foul-smelling is flagged as a Focus of Infestation</li>
+          <li data-i18n="s3-li4"><strong>15% threshold auto-trigger</strong> — system flags the lot for mandatory intervention when incidence exceeds the SENASICA threshold</li>
         </ul>
       </div>
       <div class="severity-strip">
-        <div class="sev-badge sev-0"><div class="num">0</div><div class="lbl">Healthy</div></div>
-        <div class="sev-badge sev-1"><div class="num">1</div><div class="lbl">Low<br>Spots</div></div>
-        <div class="sev-badge sev-2"><div class="num">2</div><div class="lbl">Moderate<br>Yellowing</div></div>
-        <div class="sev-badge sev-3"><div class="num">3</div><div class="lbl">Severe<br>Rot</div></div>
-        <div class="sev-badge sev-4"><div class="num">4</div><div class="lbl">Dead /<br>Total</div></div>
+        <div class="sev-badge sev-0"><div class="num">0</div><div class="lbl" data-i18n="s3-s0">Healthy</div></div>
+        <div class="sev-badge sev-1"><div class="num">1</div><div class="lbl" data-i18n="s3-s1">Low<br>Spots</div></div>
+        <div class="sev-badge sev-2"><div class="num">2</div><div class="lbl" data-i18n="s3-s2">Moderate<br>Yellowing</div></div>
+        <div class="sev-badge sev-3"><div class="num">3</div><div class="lbl" data-i18n="s3-s3">Severe<br>Rot</div></div>
+        <div class="sev-badge sev-4"><div class="num">4</div><div class="lbl" data-i18n="s3-s4">Dead /<br>Total</div></div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide3_leaf_inspection_1774404756284.png" alt="Leaf disease inspection"></div>
@@ -162,13 +168,13 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Platform Proof · FieldAgent in Blueberries</div>
-      <div class="slide-h1">Guided Agronomic Tasks — Running in Production.</div>
+      <div class="slide-tag" data-i18n="s4-tag">Platform Proof · FieldAgent in Blueberries</div>
+      <div class="slide-h1" data-i18n="s4-h1">Guided Agronomic Tasks — Running in Production.</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>The same <strong>FieldAgent</strong> guided task experience that walks an agave scout through the phytosanitary census is already deployed in other crops.</p>
-        <p>The image shows a blueberry pruning session: FieldAgent's AI Pruning Assistant displays real-time cane-level annotated overlays on the worker's phone — <strong>KEEP (green)</strong> vs. <strong>REMOVE (red/X)</strong> — with cane age and estimated yield impact.</p>
-        <div class="callout">The analogy to agave scouting is direct: instead of cane classifications, FieldAgent walks the agave scout plant-by-plant through severity ratings (0–4), auto-populates the disease type, and pre-fills the SIVEA report fields. <strong>FarmAgent is a proven platform adapted to your crop.</strong></div>
+        <p data-i18n="s4-p1">The same <strong>FieldAgent</strong> guided task experience that walks an agave scout through the phytosanitary census is already deployed in other crops.</p>
+        <p data-i18n="s4-p2">The image shows a blueberry pruning session: FieldAgent's AI Pruning Assistant displays real-time cane-level annotated overlays on the worker's phone — <strong>KEEP (green)</strong> vs. <strong>REMOVE (red/X)</strong> — with cane age and estimated yield impact.</p>
+        <div class="callout" data-i18n="s4-callout">The analogy to agave scouting is direct: instead of cane classifications, FieldAgent walks the agave scout plant-by-plant through severity ratings (0–4), auto-populates the disease type, and pre-fills the SIVEA report fields. <strong>FarmAgent is a proven platform adapted to your crop.</strong></div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/blueberry_pruning_example.png" alt="Blueberry pruning AR overlay"></div>
@@ -180,21 +186,21 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Vision Technology · Pest &amp; Disease Classification</div>
-      <div class="slide-h1">Four Economic Pests. One Camera. Instant Classification.</div>
+      <div class="slide-tag" data-i18n="s5-tag">Vision Technology · Pest &amp; Disease Classification</div>
+      <div class="slide-h1" data-i18n="s5-h1">Four Economic Pests. One Camera. Instant Classification.</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p style="font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">Primary Pests — Economic Impact</p>
+        <p style="font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;" data-i18n="s5-sub1">Primary Pests — Economic Impact</p>
         <ul class="bullet-list">
-          <li><em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart. Only pest present year-round — sole target of pheromone traps.</li>
-          <li><em>Strategus aloeus (Rondon)</em> — <strong>stem boring</strong>, severe root and crown damage</li>
-          <li><em>Asterina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas</li>
-          <li><em>Cerambycid (Longhorn Beetle)</em> — <strong>larval stem tunneling</strong>, secondary infection entry point</li>
+          <li data-i18n="s5-li1"><em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart. Only pest present year-round — sole target of pheromone traps.</li>
+          <li data-i18n="s5-li2"><em>Strategus aloeus (Rondon)</em> — <strong>stem boring</strong>, severe root and crown damage</li>
+          <li data-i18n="s5-li3"><em>Asterina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas</li>
+          <li data-i18n="s5-li4"><em>Cerambycid (Longhorn Beetle)</em> — <strong>larval stem tunneling</strong>, secondary infection entry point</li>
         </ul>
-        <p style="font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:10px 0 4px;">Secondary Monitors — Damage Severity</p>
+        <p style="font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:10px 0 4px;" data-i18n="s5-sub2">Secondary Monitors — Damage Severity</p>
         <ul class="bullet-list">
-          <li><em>Fusarium oxysporum</em> — apical yellowing (Wilt) — monitored to prevent field-wide spread</li>
-          <li><em>Erwinia carotovora</em> — aqueous necrotic lesions, soft rot — monitored for severity escalation</li>
+          <li data-i18n="s5-li5"><em>Fusarium oxysporum</em> — apical yellowing (Wilt) — monitored to prevent field-wide spread</li>
+          <li data-i18n="s5-li6"><em>Erwinia carotovora</em> — aqueous necrotic lesions, soft rot — monitored for severity escalation</li>
         </ul>
       </div>
     </div>
@@ -206,21 +212,21 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Process 2 · YOLO Object Detection · Bi-Weekly Trapping</div>
-      <div class="slide-h1">Automated Weevil Counts — 3 Seconds Per Trap</div>
+      <div class="slide-tag" data-i18n="s6-tag">Process 2 · YOLO Object Detection · Bi-Weekly Trapping</div>
+      <div class="slide-h1" data-i18n="s6-h1">Automated Weevil Counts — 3 Seconds Per Trap</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p><em>Scyphophorus</em> sp. is the <strong>only economic pest suitable for pheromone trapping</strong> — because it is the only species present in the field year-round. Rondon, Cerambycid, and gray spot must be caught via physical inspection.</p>
+        <p data-i18n="s6-p1"><em>Scyphophorus</em> sp. is the <strong>only economic pest suitable for pheromone trapping</strong> — because it is the only species present in the field year-round. Rondon, Cerambycid, and gray spot must be caught via physical inspection.</p>
         <ul class="bullet-list">
-          <li>FarmAgent's <strong>YOLO model</strong> counts every adult weevil in the trap from a single photo — 3 seconds vs. 10+ minutes manual</li>
-          <li>Count logged automatically against Trap ID, Plot ID, and Folio Geográfico</li>
-          <li>Insects-per-trap/day calculated in real time; threshold alert fires without any data entry</li>
+          <li data-i18n="s6-li1">FarmAgent's <strong>YOLO model</strong> counts every adult weevil in the trap from a single photo — 3 seconds vs. 10+ minutes manual</li>
+          <li data-i18n="s6-li2">Count logged automatically against Trap ID, Plot ID, and Folio Geográfico</li>
+          <li data-i18n="s6-li3">Insects-per-trap/day calculated in real time; threshold alert fires without any data entry</li>
         </ul>
       </div>
-      <div class="callout" style="border-color:var(--amber);margin-top:10px;"><strong style="color:var(--amber);">⚠ Neighbor Harvest Protocol</strong><br>When adjacent fields are harvested, disturbed weevil colonies migrate. FarmAgent alerts the grower to <strong>activate perimeter traps as a phytosanitary barrier</strong> — blocking the weevil jump before it reaches your field.</div>
+      <div class="callout" style="border-color:var(--amber);margin-top:10px;" data-i18n="s6-callout"><strong style="color:var(--amber);">⚠ Neighbor Harvest Protocol</strong><br>When adjacent fields are harvested, disturbed weevil colonies migrate. FarmAgent alerts the grower to <strong>activate perimeter traps as a phytosanitary barrier</strong> — blocking the weevil jump before it reaches your field.</div>
       <div class="threshold-row" style="margin-top:10px;">
         <div class="threshold-num">&gt; 1.0</div>
-        <div class="threshold-txt"><strong>SENASICA Action Threshold</strong><br>Weevils / trap / day. Auto-flagged at every inspection.</div>
+        <div class="threshold-txt" data-i18n="s6-t1"><strong>SENASICA Action Threshold</strong><br>Weevils / trap / day. Auto-flagged at every inspection.</div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide5_yolo_weevil_1774404786679.png" alt="YOLO weevil detection"></div>
@@ -231,18 +237,18 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">Platform Feature · Visual Localizer & GPS</div>
-      <div class="slide-h1">Every Observation — GPS-Pinned, Photo-Verified, Auditable</div>
+      <div class="slide-tag" data-i18n="s7-tag">Platform Feature · Visual Localizer & GPS</div>
+      <div class="slide-h1" data-i18n="s7-h1">Every Observation — GPS-Pinned, Photo-Verified, Auditable</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>Every disease rating, weevil count, photograph, and scout identity is anchored to a GPS coordinate in real time — within 3 metres of the affected plant.</p>
+        <p data-i18n="s7-p1">Every disease rating, weevil count, photograph, and scout identity is anchored to a GPS coordinate in real time — within 3 metres of the affected plant.</p>
         <ul class="bullet-list">
-          <li><strong>Spatially-explicit inspection record</strong> — CRT inspector can see exactly which plants were checked and when</li>
-          <li><strong>Infestation Focus visualization</strong> — hot zones appear on the map before the scout finishes the lot</li>
-          <li><strong>Photo chain of custody</strong> — timestamped, scout-attributed, available for CRT audit at any time</li>
-          <li><strong>Sample ID generation</strong> — date, GPS, collector, and lot ID automatically bundled for lab submission</li>
+          <li data-i18n="s7-li1"><strong>Spatially-explicit inspection record</strong> — CRT inspector can see exactly which plants were checked and when</li>
+          <li data-i18n="s7-li2"><strong>Infestation Focus visualization</strong> — hot zones appear on the map before the scout finishes the lot</li>
+          <li data-i18n="s7-li3"><strong>Photo chain of custody</strong> — timestamped, scout-attributed, available for CRT audit at any time</li>
+          <li data-i18n="s7-li4"><strong>Sample ID generation</strong> — date, GPS, collector, and lot ID automatically bundled for lab submission</li>
         </ul>
-        <div class="callout">The CRT inspector arrives to a property and finds the complete digital record already uploaded — every lot, every inspection date, every photograph — <strong>ready for review.</strong></div>
+        <div class="callout" data-i18n="s7-callout">The CRT inspector arrives to a property and finds the complete digital record already uploaded — every lot, every inspection date, every photograph — <strong>ready for review.</strong></div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide6_gps_map_1774404801961.png" alt="GPS map with disease pins"></div>
@@ -253,19 +259,19 @@
 <div class="slide-inner glow-orb">
   <div class="two-col">
     <div class="col-text">
-      <div class="slide-tag">SIVEA Integration · Automatic Reporting</div>
-      <div class="slide-h1">SIVEA Submission Built During the Inspection — Not After</div>
+      <div class="slide-tag" data-i18n="s8-tag">SIVEA Integration · Automatic Reporting</div>
+      <div class="slide-h1" data-i18n="s8-h1">SIVEA Submission Built During the Inspection — Not After</div>
       <div class="slide-rule"></div>
       <div class="slide-body">
-        <p>When the quarterly inspection is complete, FarmAgent calculates incidence automatically and pre-populates the SIVEA required fields:</p>
+        <p data-i18n="s8-p1">When the quarterly inspection is complete, FarmAgent calculates incidence automatically and pre-populates the SIVEA required fields:</p>
         <ul class="bullet-list">
-          <li><strong>Folio Geográfico</strong> — GPS-linked plot ID</li>
-          <li><strong>Organismo Plaga</strong> — scientific name of every detected pest</li>
-          <li><strong>Hospedante</strong> — <em>Agave tequilana Weber</em></li>
-          <li><strong>Nivel de Infestación</strong> — incidence % vs. severity score, auto-calculated</li>
-          <li><strong>Acciones Fitosanitarias</strong> — intervention logged and linked to CRT agroservices number</li>
+          <li data-i18n="s8-li1"><strong>Folio Geográfico</strong> — GPS-linked plot ID</li>
+          <li data-i18n="s8-li2"><strong>Organismo Plaga</strong> — scientific name of every detected pest</li>
+          <li data-i18n="s8-li3"><strong>Hospedante</strong> — <em>Agave tequilana Weber</em></li>
+          <li data-i18n="s8-li4"><strong>Nivel de Infestación</strong> — incidence % vs. severity score, auto-calculated</li>
+          <li data-i18n="s8-li5"><strong>Acciones Fitosanitarias</strong> — intervention logged and linked to CRT agroservices number</li>
         </ul>
-        <div class="callout">If <strong>≥ 15% of plants show low severity</strong> or <strong>≥ 8% show high severity</strong>, the system automatically declares an Infestation Focus and notifies the local Phytosanitary Subcommittee.</div>
+        <div class="callout" data-i18n="s8-callout">If <strong>≥ 15% of plants show low severity</strong> or <strong>≥ 8% show high severity</strong>, the system automatically declares an Infestation Focus and notifies the local Phytosanitary Subcommittee.</div>
       </div>
     </div>
     <div class="col-visual"><img src="assets/phyto_slide7_sivea_form_1774404818214.png" alt="SIVEA compliance form"></div>
@@ -274,18 +280,18 @@
 </div></section>
 <section>
 <div class="slide-inner glow-orb">
-  <div class="slide-tag">Technology Summary</div>
-  <div class="slide-h1">FarmAgent Vision Capabilities — CRT Reference</div>
+  <div class="slide-tag" data-i18n="s9-tag">Technology Summary</div>
+  <div class="slide-h1" data-i18n="s9-h1">FarmAgent Vision Capabilities — CRT Reference</div>
   <div class="slide-rule"></div>
   <table class="cap-table">
-    <tr><th>Capability</th><th>Technology</th><th>Application</th></tr>
-    <tr><td>Leaf disease classification</td><td>General Vision CV</td><td>Grades 0–4 severity, 4 primary pathogens</td></tr>
-    <tr><td>Agave weevil counting</td><td>YOLO object detection</td><td>Real-time count per trap per inspection</td></tr>
-    <tr><td>GPS plant-level pinning</td><td>Visual Localizer</td><td>Every observation within 3m accuracy</td></tr>
-    <tr><td>SIVEA field mapping</td><td>Folio Geográfico integration</td><td>Auto-populates all required regulatory fields</td></tr>
-    <tr><td>Infestation focus declaration</td><td>SENASICA threshold engine</td><td>15% / 8% auto-flag + subcommittee notification</td></tr>
-    <tr><td>Photo chain of custody</td><td>Timestamped scout-attributed log</td><td>Available for CRT audit at any time</td></tr>
-    <tr><td>PHI compliance check</td><td>Pre-Harvest Interval enforcement</td><td>Chemical applications locked before harvest sign-off</td></tr>
+    <tr><th data-i18n="s9-th1">Capability</th><th data-i18n="s9-th2">Technology</th><th data-i18n="s9-th3">Application</th></tr>
+    <tr><td data-i18n="s9-c1">Leaf disease classification</td><td data-i18n="s9-t1">General Vision CV</td><td data-i18n="s9-a1">Grades 0–4 severity, 4 primary pathogens</td></tr>
+    <tr><td data-i18n="s9-c2">Agave weevil counting</td><td data-i18n="s9-t2">YOLO object detection</td><td data-i18n="s9-a2">Real-time count per trap per inspection</td></tr>
+    <tr><td data-i18n="s9-c3">GPS plant-level pinning</td><td data-i18n="s9-t3">Visual Localizer</td><td data-i18n="s9-a3">Every observation within 3m accuracy</td></tr>
+    <tr><td data-i18n="s9-c4">SIVEA field mapping</td><td data-i18n="s9-t4">Folio Geográfico integration</td><td data-i18n="s9-a4">Auto-populates all required regulatory fields</td></tr>
+    <tr><td data-i18n="s9-c5">Infestation focus declaration</td><td data-i18n="s9-t5">SENASICA threshold engine</td><td data-i18n="s9-a5">15% / 8% auto-flag + subcommittee notification</td></tr>
+    <tr><td data-i18n="s9-c6">Photo chain of custody</td><td data-i18n="s9-t6">Timestamped scout-attributed log</td><td data-i18n="s9-a6">Available for CRT audit at any time</td></tr>
+    <tr><td data-i18n="s9-c7">PHI compliance check</td><td data-i18n="s9-t7">Pre-Harvest Interval enforcement</td><td data-i18n="s9-a7">Chemical applications locked before harvest sign-off</td></tr>
   </table>
   <div class="slide-footer"><span class="slide-footer-logo">FarmAgent</span><span>FruitScout &nbsp;·&nbsp; 8 / 9</span></div>
 </div></section>
@@ -294,11 +300,11 @@
   <div class="cover-bg" style="background-image:url('assets/phyto_slide8_handshake_1774404834393.png')"></div>
   <div style="position:absolute;inset:0;background:rgba(8,14,20,.76);"></div>
   <div style="position:relative;z-index:2;padding:48px;max-width:700px;">
-    <div style="font-family:var(--ftitle);font-weight:200;font-size:52px;color:var(--tp);line-height:1.25;margin-bottom:18px;">
+    <div style="font-family:var(--ftitle);font-weight:200;font-size:52px;color:var(--tp);line-height:1.25;margin-bottom:18px;" data-i18n="s10-h1">
       The chain is complete,<br>traceable, and <em style="color:var(--green);font-style:normal;">provable.</em>
     </div>
     <div class="cover-rule" style="margin:0 auto 22px;"></div>
-    <p style="font-family:var(--fbody);font-size:16px;color:var(--ts);line-height:1.65;margin:0 0 32px;">
+    <p style="font-family:var(--fbody);font-size:16px;color:var(--ts);line-height:1.65;margin:0 0 32px;" data-i18n="s10-p1">
       We invite the CRT to run a supervised pilot on one registered lot — with your field inspector present — to validate FarmAgent data against your own ground-truth observations.
     </p>
     <div style="margin-top:24px;font-family:var(--fbody);font-size:12px;color:var(--tm);">
@@ -310,6 +316,7 @@
 
   </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
 <script>
 Reveal.initialize({
@@ -317,6 +324,175 @@ Reveal.initialize({
   backgroundTransition: 'fade', progress: true, controls: true,
   slideNumber: false, center: false, disableLayout: true, margin: 0,
 });
+
+const i18n = {
+  en: {
+    "hero-tag": "FarmAgent · Agave Edition &nbsp;·&nbsp; Technology Demonstration",
+    "hero-h1": "Phytosanitary<br>Scouting<br><em style='color:var(--green);font-style:normal;'>on a Phone.</em>",
+    "hero-sub": "A demonstration of mobile-based AI vision for SENASICA- and CRT-compliant phytosanitary inspection — covering the Quarterly Physical Census and the Bi-Weekly Weevil Trapping Program.",
+    "footer-conf": "FruitScout · Confidential · For CRT Review",
+    "s2-tag": "Regulatory Context",
+    "s2-h1": "The CRT Requires Full Traceability. FarmAgent Delivers It.",
+    "s2-p1": "Mexico's phytosanitary framework demands a closed, auditable chain from Mother Garden to Movement Passport — governed by <strong>SENASICA</strong>, <strong>CRT</strong>, and reported through <strong>SIVEA</strong>.",
+    "s2-li1": "<strong>Plot Registration</strong> — Every lot registered with CRT number and Folio Geográfico",
+    "s2-li2": "<strong>Quarterly Census</strong> — 100-plant minimum per lot; 1% sampling above 5 ha",
+    "s2-li3": "<strong>Bi-Weekly Trapping</strong> — Weevil count per trap every 15 days",
+    "s2-li4": "<strong>SIVEA Upload</strong> — Incidence, severity, organism, and actions all required fields",
+    "s2-li5": "<strong>NOM-006-SCFI-2012</strong> — Tequila specification compliance from field to bottle",
+    "s2-callout": "Today, most operators re-enter paper data into SIVEA hours or days after the inspection. <strong>That gap is where compliance breaks down.</strong>",
+    "s3-tag": "Process 1 · Quarterly Physical Census",
+    "s3-h1": "Visual Disease Classification — In Real Time",
+    "s3-p1": "The scout walks the lot in a zig-zag or X pattern. At each plant, they aim their smartphone at the pencas and piña base.",
+    "s3-li1": "<strong>AI classifies leaf symptoms</strong> — circular gray spots, apical yellowing, aqueous necrotic lesions — instantly",
+    "s3-li2": "<strong>Severity rated 0–4</strong> per SENASICA scale, pre-filled in the logbook with a single confirmation tap",
+    "s3-li3": "<strong>Core rot check</strong> — scout presses the piña base; soft or foul-smelling is flagged as a Focus of Infestation",
+    "s3-li4": "<strong>15% threshold auto-trigger</strong> — system flags the lot for mandatory intervention when incidence exceeds the SENASICA threshold",
+    "s3-s0": "Healthy", "s3-s1": "Low<br>Spots", "s3-s2": "Moderate<br>Yellowing", "s3-s3": "Severe<br>Rot", "s3-s4": "Dead /<br>Total",
+    "s4-tag": "Platform Proof · FieldAgent in Blueberries",
+    "s4-h1": "Guided Agronomic Tasks — Running in Production.",
+    "s4-p1": "The same <strong>FieldAgent</strong> guided task experience that walks an agave scout through the phytosanitary census is already deployed in other crops.",
+    "s4-p2": "The image shows a blueberry pruning session: FieldAgent's AI Pruning Assistant displays real-time cane-level annotated overlays on the worker's phone — <strong>KEEP (green)</strong> vs. <strong>REMOVE (red/X)</strong> — with cane age and estimated yield impact.",
+    "s4-callout": "The analogy to agave scouting is direct: instead of cane classifications, FieldAgent walks the agave scout plant-by-plant through severity ratings (0–4), auto-populates the disease type, and pre-fills the SIVEA report fields. <strong>FarmAgent is a proven platform adapted to your crop.</strong>",
+    "s5-tag": "Vision Technology · Pest & Disease Classification",
+    "s5-h1": "Four Economic Pests. One Camera. Instant Classification.",
+    "s5-sub1": "Primary Pests — Economic Impact",
+    "s5-li1": "<em>Scyphophorus sp.</em> — <strong>entry bore holes</strong>, hollow heart. Only pest present year-round — sole target of pheromone traps.",
+    "s5-li2": "<em>Strategus aloeus (Rondon)</em> — <strong>stem boring</strong>, severe root and crown damage",
+    "s5-li3": "<em>Asterina mexicana</em> — <strong>circular gray spots (mancha gris)</strong> on pencas",
+    "s5-li4": "<em>Cerambycid (Longhorn Beetle)</em> — <strong>larval stem tunneling</strong>, secondary infection entry point",
+    "s5-sub2": "Secondary Monitors — Damage Severity",
+    "s5-li5": "<em>Fusarium oxysporum</em> — apical yellowing (Wilt) — monitored to prevent field-wide spread",
+    "s5-li6": "<em>Erwinia carotovora</em> — aqueous necrotic lesions, soft rot — monitored for severity escalation",
+    "s6-tag": "Process 2 · YOLO Object Detection · Bi-Weekly Trapping",
+    "s6-h1": "Automated Weevil Counts — 3 Seconds Per Trap",
+    "s6-p1": "<em>Scyphophorus</em> sp. is the <strong>only economic pest suitable for pheromone trapping</strong> — because it is the only species present in the field year-round. Rondon, Cerambycid, and gray spot must be caught via physical inspection.",
+    "s6-li1": "FarmAgent's <strong>YOLO model</strong> counts every adult weevil in the trap from a single photo — 3 seconds vs. 10+ minutes manual",
+    "s6-li2": "Count logged automatically against Trap ID, Plot ID, and Folio Geográfico",
+    "s6-li3": "Insects-per-trap/day calculated in real time; threshold alert fires without any data entry",
+    "s6-callout": "<strong style='color:var(--amber);'>⚠ Neighbor Harvest Protocol</strong><br>When adjacent fields are harvested, disturbed weevil colonies migrate. FarmAgent alerts the grower to <strong>activate perimeter traps as a phytosanitary barrier</strong> — blocking the weevil jump before it reaches your field.",
+    "s6-t1": "<strong>SENASICA Action Threshold</strong><br>Weevils / trap / day. Auto-flagged at every inspection.",
+    "s7-tag": "Platform Feature · Visual Localizer & GPS",
+    "s7-h1": "Every Observation — GPS-Pinned, Photo-Verified, Auditable",
+    "s7-p1": "Every disease rating, weevil count, photograph, and scout identity is anchored to a GPS coordinate in real time — within 3 metres of the affected plant.",
+    "s7-li1": "<strong>Spatially-explicit inspection record</strong> — CRT inspector can see exactly which plants were checked and when",
+    "s7-li2": "<strong>Infestation Focus visualization</strong> — hot zones appear on the map before the scout finishes the lot",
+    "s7-li3": "<strong>Photo chain of custody</strong> — timestamped, scout-attributed, available for CRT audit at any time",
+    "s7-li4": "<strong>Sample ID generation</strong> — date, GPS, collector, and lot ID automatically bundled for lab submission",
+    "s7-callout": "The CRT inspector arrives to a property and finds the complete digital record already uploaded — every lot, every inspection date, every photograph — <strong>ready for review.</strong>",
+    "s8-tag": "SIVEA Integration · Automatic Reporting",
+    "s8-h1": "SIVEA Submission Built During the Inspection — Not After",
+    "s8-p1": "When the quarterly inspection is complete, FarmAgent calculates incidence automatically and pre-populates the SIVEA required fields:",
+    "s8-li1": "<strong>Folio Geográfico</strong> — GPS-linked plot ID",
+    "s8-li2": "<strong>Organismo Plaga</strong> — scientific name of every detected pest",
+    "s8-li3": "<strong>Hospedante</strong> — <em>Agave tequilana Weber</em>",
+    "s8-li4": "<strong>Nivel de Infestación</strong> — incidence % vs. severity score, auto-calculated",
+    "s8-li5": "<strong>Acciones Fitosanitarias</strong> — intervention logged and linked to CRT agroservices number",
+    "s8-callout": "If <strong>≥ 15% of plants show low severity</strong> or <strong>≥ 8% show high severity</strong>, the system automatically declares an Infestation Focus and notifies the local Phytosanitary Subcommittee.",
+    "s9-tag": "Technology Summary",
+    "s9-h1": "FarmAgent Vision Capabilities — CRT Reference",
+    "s9-th1": "Capability", "s9-th2": "Technology", "s9-th3": "Application",
+    "s9-c1": "Leaf disease classification", "s9-t1": "General Vision CV", "s9-a1": "Grades 0–4 severity, 4 primary pathogens",
+    "s9-c2": "Agave weevil counting", "s9-t2": "YOLO object detection", "s9-a2": "Real-time count per trap per inspection",
+    "s9-c3": "GPS plant-level pinning", "s9-t3": "Visual Localizer", "s9-a3": "Every observation within 3m accuracy",
+    "s9-c4": "SIVEA field mapping", "s9-t4": "Folio Geográfico integration", "s9-a4": "Auto-populates all required regulatory fields",
+    "s9-c5": "Infestation focus declaration", "s9-t5": "SENASICA threshold engine", "s9-a5": "15% / 8% auto-flag + subcommittee notification",
+    "s9-c6": "Photo chain of custody", "s9-t6": "Timestamped scout-attributed log", "s9-a6": "Available for CRT audit at any time",
+    "s9-c7": "PHI compliance check", "s9-t7": "Pre-Harvest Interval enforcement", "s9-a7": "Chemical applications locked before harvest sign-off",
+    "s10-h1": "The chain is complete,<br>traceable, and <em style='color:var(--green);font-style:normal;'>provable.</em>",
+    "s10-p1": "We invite the CRT to run a supervised pilot on one registered lot — with your field inspector present — to validate FarmAgent data against your own ground-truth observations."
+  },
+  es: {
+    "hero-tag": "FarmAgent · Edición Agave &nbsp;·&nbsp; Demostración de Tecnología",
+    "hero-h1": "Monitoreo<br>Fitosanitario<br><em style='color:var(--green);font-style:normal;'>en un Teléfono.</em>",
+    "hero-sub": "Una demostración de visión de IA móvil para la inspección fitosanitaria cumpliendo con SENASICA y el CRT — cubriendo el Censo Físico Trimestral y el Programa Quincenal de Trampeo de Picudo.",
+    "footer-conf": "FruitScout · Confidencial · Para Revisión del CRT",
+    "s2-tag": "Contexto Regulatorio",
+    "s2-h1": "El CRT Exige Trazabilidad Total. FarmAgent la Entrega.",
+    "s2-p1": "El marco fitosanitario de México demanda una cadena auditable desde la Huerta Madre hasta la Guía de Movimiento — gobernado por <strong>SENASICA</strong>, <strong>CRT</strong>, y reportado a través de <strong>SIVEA</strong>.",
+    "s2-li1": "<strong>Registro de Predio</strong> — Cada lote registrado con su número CRT y Folio Geográfico",
+    "s2-li2": "<strong>Censo Trimestral</strong> — Mínimo 100 plantas por lote; muestreo de 1% arriba de 5 ha",
+    "s2-li3": "<strong>Trampeo Quincenal</strong> — Conteo de picudo por trampa cada 15 días",
+    "s2-li4": "<strong>Subida en SIVEA</strong> — Incidencia, severidad, organismo y acciones son datos obligatorios",
+    "s2-li5": "<strong>NOM-006-SCFI-2012</strong> — Cumplimiento de especificación del tequila del campo a la botella",
+    "s2-callout": "Hoy, la mayoría de los operadores re-capturan los datos en el SIVEA horas o días después. <strong>Ahí es donde se pierde la trazabilidad de la inspección.</strong>",
+    "s3-tag": "Proceso 1 · Censo Físico Trimestral",
+    "s3-h1": "Clasificación Visual de Enfermedades — En Tiempo Real",
+    "s3-p1": "El técnico camina el lote en zigzag o patrón X. En cada planta, apunta su teléfono a las pencas y a la base de la piña.",
+    "s3-li1": "<strong>La IA clasifica los síntomas</strong> — mancha gris circular, amarillamiento apical, lesiones por pudrición — al instante",
+    "s3-li2": "<strong>Severidad puntuada del 0–4</strong> por la escala SENASICA, y documentada con un solo tap",
+    "s3-li3": "<strong>Revisión de pudrición de cogollo</strong> — el operario presiona la base; lo fétido se dictamina como Foco de Infección",
+    "s3-li4": "<strong>Disparador del 15%</strong> — el sistema levanta alerta si el lote requiere de intervención obligatoria según SENASICA",
+    "s3-s0": "Libre/Sana", "s3-s1": "Manchas<br>Bajas", "s3-s2": "Amarilleo<br>Moderado", "s3-s3": "Pudrición<br>Severa", "s3-s4": "Muerta /<br>Total",
+    "s4-tag": "Prueba de Plataforma · FieldAgent en Arándanos",
+    "s4-h1": "Aplicación de Procesos Agronómicos Guiado",
+    "s4-p1": "La misma tecnología de <strong>FieldAgent</strong> que guía a un evaluador de agave en el censo fitosanitario, ya está actualmente liderando el conteo de cultivos a nivel mundial.",
+    "s4-p2": "La imagen muestra un supervisor de poda de arándano verde: un Asistente Visual le enseña — <strong>CUÁL DEJAR (verde)</strong> vs. <strong>CUÁL QUITAR (rojo)</strong>.",
+    "s4-callout": "La comparación con el trampeo de agave vuela hacia la clasificación de 0-4 de enfermedades por la guía fotográfica en tiempo real. <strong>FarmAgent toma la misma red neuronal re-entrenándola a cada proceso y planta.</strong>",
+    "s5-tag": "Tecnología de Visión · Plagas y Clasificación",
+    "s5-h1": "Cuatro Plagas Principales. Una Cámara. Clasificación Al Instante.",
+    "s5-sub1": "Plagas Primarias — Impacto Económico",
+    "s5-li1": "<em>Scyphophorus sp. (Picudo)</em> — <strong>Barrenación con ingreso</strong> - Corazón hueco. Plaga contínua en toda la vida.",
+    "s5-li2": "<em>Strategus aloeus (Rondon)</em> — <strong>Coronas dañadas</strong> y tallos hundidos —",
+    "s5-li3": "<em>Asterina mexicana</em> — <strong>Mancha gris (círculos)</strong> —",
+    "s5-li4": "<em>Cerambycid (Escarabajo Longicórneo)</em> — <strong>Oradaciones (túneles)</strong> - Infecciones con focos secundarios —",
+    "s5-sub2": "Severidad y Seguimiento Secundario",
+    "s5-li5": "<em>Fusarium oxysporum</em> —  Amarillamiento descendente (Wilt) — revisados para prever propagación en todo el valle.",
+    "s5-li6": "<em>Erwinia carotovora</em> — Pudrición bacterial por mancha acuosa",
+    "s6-tag": "Proceso 2 · Detección Fotográfica YOLO · Trampas Quincenales",
+    "s6-h1": "Conteos de Picudo — Aprobado en 3 Segundos por Trampa",
+    "s6-p1": "El <em>Scyphophorus</em> sp. es la plaga más idónea para el cebo gracias a a la invasión a lo largo del año completo. Sin embargo, el Rondon u otra plaga sólo es clasificada visualmente.",
+    "s6-li1": "El modelo <strong>YOLO FarmAgent</strong> cuenta con un clic de fotografía el promedio de picudo de toda la red atrapada en tan solo 3 segundos.",
+    "s6-li2": "Registro tabulado con ID, Lote, Trampa y Georeferencia",
+    "s6-li3": "Índices calculados; disparador directo en el reporte local.",
+    "s6-callout": "<strong style='color:var(--amber);'>⚠ Protocolo Vecinos (Cosecha)</strong><br>El trampeo de barrera fronteriza está alertado cuándo detectamos <strong>Jima y migración de la zona circundante.</strong>",
+    "s6-t1": "<strong>Umbral de Límite Acción SENASICA</strong><br>Picudo por trampa/día. Etiquetado automático en verde o alerta.",
+    "s7-tag": "Características · Rastreador Fito-Geolocalizador GPS",
+    "s7-h1": "Observaciones con Firma Fotográfica y Archivo Total de Auditor",
+    "s7-p1": "Cada dato subido al registro contiene GPS integrado y de ubicación precisa (hasta tres metros).",
+    "s7-li1": "<strong>Padrón Inspección Analizable en la App</strong>",
+    "s7-li2": "<strong>Focos Mapeados (Mapa Calor)</strong>",
+    "s7-li3": "<strong>Evidecia por Foto (Firma Operador)</strong>",
+    "s7-li4": "<strong>Generación Código de Referencia para envio Muestrario de Tierra</strong>",
+    "s7-callout": "El supervisor del gobierno obtiene acceso previo por <strong>enlace directo</strong> para verificar en ruta cada lotificación o zona infectada con la visualización original.",
+    "s8-tag": "SIVEA Integración · Llenado Reporte Estatal",
+    "s8-h1": "Formularios SIVEA Construidos En El Surco, Sin Lápiz.",
+    "s8-p1": "Habiendo acabado el escaneo, FarmAgent junta las hojas oficiales prellenadas del formulario gubernamental:",
+    "s8-li1": "<strong>Folio Geográfico</strong>",
+    "s8-li2": "<strong>Organismo Plaga</strong>",
+    "s8-li3": "<strong>Hospedante (Agave t.)</strong>",
+    "s8-li4": "<strong>Nivel de Infestación</strong>",
+    "s8-li5": "<strong>Acciones recomendadas.</strong>",
+    "s8-callout": "Condicionado por el código de umbral, las medidas de erradicación a reingreso de huerta están pautadas por los cruces lógicos del comité del CESAVEJAL.",
+    "s9-tag": "Resumen Funcional y Normativo",
+    "s9-h1": "Tablero Cruzado de Interacción e Inventario Fitosanitario",
+    "s9-th1": "Cumplimiento", "s9-th2": "Motor", "s9-th3": "Desempeño / Requerido",
+    "s9-c1": "Grado Severidad Fito", "s9-t1": "Foliar Inteligencia CV", "s9-a1": "Rango 0–4 Severidad",
+    "s9-c2": "Trampéo conteo de Incecto", "s9-t2": "Contador Detección YOLO", "s9-a2": "Real count x trampa x fecha",
+    "s9-c3": "Precisión Topográfica GPS", "s9-t3": "Sensor Visual Loc.", "s9-a3": "Validación con < 3mt precisión",
+    "s9-c4": "Descarga Formularios del Gobierno", "s9-t4": "API Geográfico de Integración", "s9-a4": "Copia de bitácora espejo con el SIVEA",
+    "s9-c5": "Punto Incidencia-Acción", "s9-t5": "Motor Decisión Fito-SENASICA", "s9-a5": "Trigger para %15 o Notificación Comité",
+    "s9-c6": "Cadena de Pruebas", "s9-t6": "Block de Datos y Fotografías", "s9-a6": "Abierto y en la Nube permanentemente",
+    "s9-c7": "Control Preventivo Cosecha / Químicos", "s9-t7": "Restricción Pre-Cosecha Time-Lock", "s9-a7": "Sellado de la planta con intervalo Químico-Jima.",
+    "s10-h1": "La Cadena Inicia, Finaliza y es 100% Cierta <em style='color:var(--green);font-style:normal;'>Comprobada.</em>",
+    "s10-p1": "Extendemos esta solución e invitado principal al CRT en un espacio dedicado y monitoreado del padrón real para un cruce absoluto sobre las normas SIVEA y bitácoras."
+  }
+};
+
+function setLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if(i18n[lang][k] !== undefined) el.innerHTML = i18n[lang][k];
+  });
+  document.getElementById('btn-en').className = lang === 'en' ? 'active' : 'inactive';
+  document.getElementById('btn-es').className = lang === 'es' ? 'active' : 'inactive';
+  document.documentElement.lang = lang;
+  localStorage.setItem('fa-deck-lang', lang);
+}
+
+// init
+const saved = localStorage.getItem('fa-deck-lang') || 'en';
+if(saved === 'es') setLang('es');
+
 </script>
 </body>
 </html>
